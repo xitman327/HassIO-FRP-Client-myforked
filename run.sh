@@ -63,6 +63,14 @@ if [ ! -f /usr/src/frpc.ini ]; then
     echo "local_port = 445" >> /usr/src/frpc.ini
     echo "remote_port = 445" >> /usr/src/frpc.ini
 
+     echo "Adding NodeRed Exposure......."
+    echo "" >> /usr/src/frpc.ini
+    echo "[smb]" >> /usr/src/frpc.ini
+    echo "type = tcp" >> /usr/src/frpc.ini
+    echo "local_ip = 127.0.0.1 " >> /usr/src/frpc.ini
+    echo "local_port = 1880" >> /usr/src/frpc.ini
+    echo "remote_port = 1880" >> /usr/src/frpc.ini
+
     echo "Creating frpc.ini done"
 fi
 
