@@ -1,4 +1,4 @@
-d#!/usr/bin/with-contenv bashio
+#!/usr/bin/with-contenv bashio
 WAIT_PIDS=()
 
 declare serverip
@@ -63,7 +63,7 @@ if [ ! -f /usr/src/frpc.ini ]; then
     echo "local_port = 445" >> /usr/src/frpc.ini
     echo "remote_port = 445" >> /usr/src/frpc.ini
 
-     echo "Adding NodeRed Exposure......."
+    echo "Adding NodeRed Exposure......."
     echo "" >> /usr/src/frpc.ini
     echo "[nodered]" >> /usr/src/frpc.ini
     echo "type = tcp" >> /usr/src/frpc.ini
